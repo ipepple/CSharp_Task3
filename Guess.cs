@@ -35,7 +35,7 @@ namespace Guess
  			 	
  			 	if (difficulty == "Easy")
  			 	{ 
- 			 		guessesLeft = levelLimit[1]; 
+ 			 		guessesLeft = levelLimit[0]; 
  			 		systemGeneratedNum = random.Next(1,10);
  			 		
  			 		while (guessesLeft != 0)
@@ -65,7 +65,7 @@ namespace Guess
  			 			}
  			 				
  			 			else if (difficulty == "Medium"){
- 			 				guessesLeft = levelLimit[2]; 
+ 			 				guessesLeft = levelLimit[1]; 
  			 				systemGeneratedNum = random.Next(1,21); 
  			 				while (guessesLeft != 0){ 
  			 					Console.Write("Take A Wild Guess: "); 
@@ -90,7 +90,7 @@ namespace Guess
  			 		}break;
  			 		
  			 		}else if (difficulty == "Hard"){
- 			 			guessesLeft = levelLimit[3]; 
+ 			 			guessesLeft = levelLimit[2]; 
  			 			systemGeneratedNum = random.Next(1,51);
  			 			while (guessesLeft != 0){
  			 				Console.Write("Take A Wild Guess: ");
